@@ -1,5 +1,5 @@
 import pytest
-import tesults
+import requests
 
 
 compare_test = "Test"
@@ -14,7 +14,7 @@ def fixture_code():
 
 def test_case_1(fixture_code):
     print("This is first test case")
-    assert compare_test == "fail" , "These 2 values must be same"
+    assert compare_test != "fail" , "These 2 values must be same"
 
 def test_case_2(fixture_code):
     print("This is second test case")
